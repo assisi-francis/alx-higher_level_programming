@@ -1,6 +1,7 @@
+#!/usr/bin/node
 const arg = process.argv[2];
 
-if (/^-?\d+\.?\d*$/.test(arg)) {
+if (!(isNaN(arg))) {
   console.log(`My number: ${parseInt(Number(arg))}`);
 } else {
   console.log('Not a number');
